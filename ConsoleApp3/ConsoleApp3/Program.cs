@@ -34,12 +34,25 @@ namespace ConsoleApp3
             //Fase 2
             Console.WriteLine();
             Console.WriteLine("Fase 2");
-            Console.WriteLine("Mostrem el què hi ha dins l'array:");
-            string[] arrayCiutats = { ciutat1, ciutat2, ciutat3, ciutat4, ciutat5, ciutat6 };
+            Console.WriteLine("Mostrem el què hi ha dins l'array i ordenem alfabèticament:");
+            string[] ArrayCiutats = { ciutat1, ciutat2, ciutat3, ciutat4, ciutat5, ciutat6 };
+            Array.Sort(ArrayCiutats);
 
-            for (int cont=0; cont < arrayCiutats.Length; cont++)
+            for (int cont=0; cont < ArrayCiutats.Length; cont++)
             {
-                Console.WriteLine(arrayCiutats[cont]);
+                Console.WriteLine(ArrayCiutats[cont]);
+            }
+
+            //Fase 3
+            Console.WriteLine();
+            Console.WriteLine("Fase 3");
+            Console.WriteLine("En una nova Array canviarem les lletres 'a' per '4' i les ordenarem alfabèticament: ");
+            string[] ArrayCiutatsModificades = { ciutat1.Replace('a', '4'), ciutat2.Replace('a', '4'), ciutat3.Replace('a', '4'), ciutat4.Replace('a', '4'), ciutat5.Replace('a', '4'), ciutat6.Replace('a', '4') };
+            Array.Sort(ArrayCiutatsModificades);
+
+            for (int cont = 0; cont < ArrayCiutatsModificades.Length; cont++)
+            {
+                Console.WriteLine(ArrayCiutatsModificades[cont]);
             }
         }
     }
