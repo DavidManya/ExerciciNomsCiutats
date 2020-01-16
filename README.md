@@ -1,0 +1,2 @@
+# ExerciciNomsCiutats
+Practicar funcionalitats bàsiques
