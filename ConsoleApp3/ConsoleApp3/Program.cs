@@ -54,6 +54,163 @@ namespace ConsoleApp3
             {
                 Console.WriteLine(ArrayCiutatsModificades[cont]);
             }
+
+            //Fase 4
+            Console.WriteLine();
+            Console.WriteLine("Fase 4");
+
+            string[] Barcelona;
+            Barcelona = new string ["Barcelona".Length];
+
+            string[] Madrid;
+            Madrid = new string["Madrid".Length];
+
+            string[] Valencia;
+            Valencia = new string["Valencia".Length];
+
+            string[] Malaga;
+            Malaga = new string["Malaga".Length];
+
+            string[] Cadis;
+            Cadis = new string["Cadis".Length];
+
+            string[] Santander;
+            Santander = new string["Santander".Length];
+
+            //Introduir nom de ciutats lletra per lletra
+            Console.WriteLine("Escriu 'Barcelona' lletra per lletra (prem Enter)");
+            for (int i = 0; i < Barcelona.Length; i++)
+            {
+                Barcelona[i] = Console.ReadLine();
+            }
+            Console.WriteLine("Escriu 'Madrid' lletra per lletra (prem Enter)");
+            for (int i = 0; i < Madrid.Length; i++)
+            {
+                Madrid[i] = Console.ReadLine();
+            }
+            Console.WriteLine("Escriu 'València' lletra per lletra (prem Enter)");
+            for (int i = 0; i < Valencia.Length; i++)
+            {
+                Valencia[i] = Console.ReadLine();
+            }
+            Console.WriteLine("Escriu 'Málaga' lletra per lletra (prem Enter)");
+            for (int i = 0; i < Malaga.Length; i++)
+            {
+                Malaga[i] = Console.ReadLine();
+            }
+            Console.WriteLine("Escriu 'Cadis' lletra per lletra (prem Enter)");
+            for (int i = 0; i < Cadis.Length; i++)
+            {
+                Cadis[i] = Console.ReadLine();
+            }
+            Console.WriteLine("Escriu 'Santander' lletra per lletra (prem Enter)");
+            for (int i = 0; i < Santander.Length; i++)
+            {
+                Santander[i] = Console.ReadLine();
+            }
+
+            //Ara mostrarem per consola el nom de la ciutat tant del dret com del revés
+            //Barcelona
+            string dret = "";
+            string separador = "-";
+            for (int i = 0; i < Barcelona.Length; i++)
+            {
+                string juntar = dret;
+                dret = juntar + Barcelona[i];
+            }
+            string reves = dret + separador;
+            for (int i = Barcelona.Length - 1; i >= 0; i--)
+            {
+                string juntar = reves;
+                reves = juntar + Barcelona[i];
+            }
+            Console.WriteLine();
+            Console.WriteLine(reves);
+
+            //Madrid
+            dret = "";
+
+            for (int i = 0; i < Madrid.Length; i++)
+            {
+                string juntar = dret;
+                dret = juntar + Madrid[i];
+            }
+            reves = dret + separador;
+            for (int i = Madrid.Length - 1; i >= 0; i--)
+            {
+                string juntar = reves;
+                reves = juntar + Madrid[i];
+            }
+            Console.WriteLine();
+            Console.WriteLine(reves);
+
+            //València
+            dret = "";
+
+            for (int i = 0; i < Valencia.Length; i++)
+            {
+                string juntar = dret;
+                dret = juntar + Valencia[i];
+            }
+            reves = dret + separador;
+            for (int i = Valencia.Length - 1; i >= 0; i--)
+            {
+                string juntar = reves;
+                reves = juntar + Valencia[i];
+            }
+            Console.WriteLine();
+            Console.WriteLine(reves);
+
+            //Màlaga
+            dret = "";
+
+            for (int i = 0; i < Malaga.Length; i++)
+            {
+                string juntar = dret;
+                dret = juntar + Malaga[i];
+            }
+            reves = dret + separador;
+            for (int i = Malaga.Length - 1; i >= 0; i--)
+            {
+                string juntar = reves;
+                reves = juntar + Malaga[i];
+            }
+            Console.WriteLine();
+            Console.WriteLine(reves);
+
+            //Cadis
+            dret = "";
+
+            for (int i = 0; i < Cadis.Length; i++)
+            {
+                string juntar = dret;
+                dret = juntar + Cadis[i];
+            }
+            reves = dret + separador;
+            for (int i = Cadis.Length - 1; i >= 0; i--)
+            {
+                string juntar = reves;
+                reves = juntar + Cadis[i];
+            }
+            Console.WriteLine();
+            Console.WriteLine(reves);
+
+            //Santander
+            dret = "";
+
+            for (int i = 0; i < Santander.Length; i++)
+            {
+                string juntar = dret;
+                dret = juntar + Santander[i];
+            }
+            reves = dret + separador;
+            for (int i = Santander.Length - 1; i >= 0; i--)
+            {
+                string juntar = reves;
+                reves = juntar + Santander[i];
+            }
+            Console.WriteLine();
+            Console.WriteLine(reves);
         }
     }
 }
